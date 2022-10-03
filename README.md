@@ -1,20 +1,15 @@
-#  Clausula
+# Funciones
 
-Una cláusula es una función que tiene acceso al ambito de su función padre, incluso después de que la función padre haya terminado de ejecutar.
+Una función es un bloque de código que realiza alguna operación. Una función puede definir opcionalmente parámetros de entrada que permiten a los llamadores pasar argumentos a la función. Una función también puede devolver un valor como salida
 
 ```javascript
-const miFuncion = () => {
-     let miValor = 2;
-     console.log(miValor);
-     const funcionHija = () => {
-          console.log(miValor += 1);
-     }
-     return funcionHija;
+function myFunc(theObject) {
+  theObject.make = 'Toyota';
 }
-const resultado = miFuncion();
-console.log(resultado);
-resultado();
-resultado();
-resultado();
+[parcial]var mycar = { make: 'Honda', model: 'Accord', year: 1998 };
+var x, y;
+x = mycar.make; // x obtiene el valor "Honda"
+myFunc(mycar);
+y = mycar.make; // y obtiene el valor "Toyota"
+                // (la propiedad make fue cambiada por la función)
 ```
-
