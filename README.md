@@ -1,12 +1,17 @@
-# Iteración
+# Ciclo
 
-En programación, Iteración es la repetición de un segmento de código dentro de un programa de computadora. Puede usarse tanto como un término genérico (como sinónimo de repetición) como para describir una forma específica de repetición con un estado mutable.
+Un bucle o ciclo, en programación, es una secuencia de instrucciones de código que se ejecuta repetidas veces, hasta que la condición asignada a dicho bucle deja de cumplirse. Los 3 bucles más utilizados en programación son el bucle while, el bucle for y el bucle do-while.
 
-```js
-for (let i = 0; i < a.length; i++) {
-  if (a[i] === theValue) {
-    break;
-  }
+```javascript
+let numeros = [1,2,3,4,5];
+for (x in numeros) {
+    console.log(numeros[x]);
 }
-```
 
+/*Imprime
+1
+2
+3
+4
+5
+*/
