@@ -1,17 +1,14 @@
-# Ciclo
+# For Each
 
-Un bucle o ciclo, en programación, es una secuencia de instrucciones de código que se ejecuta repetidas veces, hasta que la condición asignada a dicho bucle deja de cumplirse. Los 3 bucles más utilizados en programación son el bucle while, el bucle for y el bucle do-while.
+Un bucle FOR especial, utilizado para recorrer los elementos de una estructura de datos. Explicamos su funcionamiento en VBScript. La estructura de control FOR EACH sirve para moverse por los elementos de una estructra de datos, como podría ser un vector, y realizar acciones para cada una de los elementos.
+
 
 ```javascript
-let numeros = [1,2,3,4,5];
-for (x in numeros) {
-    console.log(numeros[x]);
-}
+const array1 = ['a', 'b', 'c','d','e'];
+array1.forEach(element => console.log(element));
+// Imprime: "a"
+// Imprime: "b"
+// Imprime: "c"
+// Imprime: "d"
+// Imprime: "e
 
-/*Imprime
-1
-2
-3
-4
-5
-*/

@@ -1,7 +1,15 @@
-let numeros = [1,2,3,4,5];
-for (x in numeros) {
-    console.log(numeros[x]);
-}
+addEventListener('DOMContentLoaded', (e) => {
+const lista = ['a', 'b', 'c','d','e'];
+
+lista.forEach(element => alert(element));
+
+// Imprime: "a"
+// Imprime: "b"
+// Imprime: "c"
+// Imprime: "d"
+// Imprime: "e"
+});
+  
 
    
    
