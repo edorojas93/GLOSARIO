@@ -1,11 +1,15 @@
-# Search
+# Nivel de Scope
 
-Un algoritmo de búsqueda es un conjunto de instrucciones que están diseñadas para localizar un elemento con ciertas propiedades dentro de una estructura de datos; por ejemplo, ubicar el registro correspondiente a cierta persona en una base de datos.
+Un scope puede definirse como un lugar desde el que puedes acceder a tu espacio de nombres sin ningún prefijo. El Scope se puede categorizar como: Ámbito de una función donde se tienen nombres locales. Ámbito de un módulo en el que se tienen variables globales
+
 
 
 ```javascript
-let text = "Pablito clavó un clavito";
-let position = text.search("clavito");
-console.log(position)
+let prenda='camisa'
+function comprar (){
+    let accesorio='reloj';
+    console.log("Estoy comprando un " + accesorio)
+}
+console.log(prenda)
 ```
 
