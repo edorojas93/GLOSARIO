@@ -1,10 +1,12 @@
-# Separadores
+# Función Flecha
 
-Los separadores o líneas horizontales, son un elemento de organización y ayudan a que el texto y gráficos aparezcan mejor ordenados. No toda la gente usa esta opción ya que prefieren organizar sus contenidos con tablas por ejemplo, pero siempre es útil saber de su existencia
+Las funciones flecha permiten definir de manera compacta una función convencional. Si la función tiene solamente una sentencia que devuelve un valor, el uso de funciones flecha nos permite eliminar las llaves y la palabra return. Incluso utilizando parámetros también podemos ver mucho más reducido el código.
 
 ```javascript
-const authHeader = 'bearer token'
-const split = authHeader.split(' ') // (1) [ 'bearer', 'token' ]
-const token = split[1] // (2) token
+let edad = prompt("Cual es tu edad?", 18);
+let Bienvenido = (edad < 18) ?
+  () => alert('¡Hola!') :
+  () => alert("¡Saludos!");
+Bienvenido();
 ```
 
