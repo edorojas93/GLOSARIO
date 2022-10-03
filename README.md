@@ -1,11 +1,11 @@
-# Función expresiva
+# Función declarada
 
-La funcion expresiva es una declaración que se inicia con la palabra reservada var, donde se generará una variable que guardará una función anónima.
+En las funciones declarativas, utilizamos la palabra reservada function al inicio para poder declarar la función.
 
 ```javascript
-var nombre = function(nombre){
-    console.log(`Hola ${nombre}`)
+function saludar(nombre) {
+  console.log(`Hola ${nombre}`);
 }
-nombre(‘Eduardo’);
+saludar('Eduardo');
 ```
 
