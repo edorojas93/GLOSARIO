@@ -1,12 +1,19 @@
 addEventListener('DOMContentLoaded', (e) => {
-    let arr = [3, 4, 5, 6];
-    let modificarArreglo = arr.map(function(element){
-        return element *3;
-    });
+    let gente = [
+        {nombre: "Fabio", edad: 5},
+        {nombre: "Pedro", edad: 2},
+        {nombre: "Carlos", edad: 33},
+        {nombre: "Federico", edad: 13},
+        {nombre: "Elisa", edad: 25},
+        {nombre: "Karla", edad: 1},
+        {nombre: "Jose", edad: 43},
+    ]
     
-    console.log(modificarArreglo); // [9, 12, 15, 18]
+    let pequeños = gente.filter(persona => persona.edad <= 3)
+    
+    console.log(pequeños)
+})
 
-});
   
 
    

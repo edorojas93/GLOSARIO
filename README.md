@@ -1,21 +1,19 @@
-# Map
+# Filter
 
-La Interface Map (java. io. Map) en Java, nos permite representar una estructura de datos para almacenar pares "clave/valor"; de tal manera que para una clave solamente tenemos un valo
+La cual es utilizada en el ámbito de la programación funcional, para a partir de una secuencia de elementos (por ejemplo, una lista) nos devuelve un objeto iterable, con aquellos elementos de la referida secuencia que cumplen con un determinado criterio establecido previamente.
 
 
 ```javascript
- arreglo.map(function(elementoActual, indice, arregloOriginal) {  ... código });
-    const products = [
-        { id: "1", name: "shirt", category: "clothing" },
-        { id: "2", name: "Sports Tennis", category: "accessories" },
-        { id: "3", name: "Casual shoes", category: "footwear" },
-        { id: "4", name: "skirt", category: "clothing" },
-        { id: "5", name: "tie", category: "clothing" }
-    ]
-    let nameOfProducts = products.map((product, index, array) => {
-        // Cómo solo queremos los nombres, retornamos "name".
-        return product.name;
-    })
-    console.log(nameOfProducts2);
+let gente = [
+        {nombre: "Fabio", edad: 5},
+        {nombre: "Pedro", edad: 2},
+        {nombre: "Carlos", edad: 33},
+        {nombre: "Federico", edad: 13},
+        {nombre: "Elisa", edad: 25},
+        {nombre: "Karla", edad: 1},
+        {nombre: "Jose", edad: 43},
+]
+let pequeños = gente.filter(persona => persona.edad <= 3)
+console.log(pequeños);
 ```
 
