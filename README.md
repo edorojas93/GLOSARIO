@@ -1,12 +1,11 @@
-# Función Flecha
+# Función expresiva
 
-Las funciones flecha permiten definir de manera compacta una función convencional. Si la función tiene solamente una sentencia que devuelve un valor, el uso de funciones flecha nos permite eliminar las llaves y la palabra return. Incluso utilizando parámetros también podemos ver mucho más reducido el código.
+La funcion expresiva es una declaración que se inicia con la palabra reservada var, donde se generará una variable que guardará una función anónima.
 
 ```javascript
-let edad = prompt("Cual es tu edad?", 18);
-let Bienvenido = (edad < 18) ?
-  () => alert('¡Hola!') :
-  () => alert("¡Saludos!");
-Bienvenido();
+var nombre = function(nombre){
+    console.log(`Hola ${nombre}`)
+}
+nombre(‘Eduardo’);
 ```
 
