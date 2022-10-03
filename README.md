@@ -1,15 +1,20 @@
-# Nivel de Scope
+#  Clausula
 
-Un scope puede definirse como un lugar desde el que puedes acceder a tu espacio de nombres sin ningún prefijo. El Scope se puede categorizar como: Ámbito de una función donde se tienen nombres locales. Ámbito de un módulo en el que se tienen variables globales
-
-
+Una cláusula es una función que tiene acceso al ambito de su función padre, incluso después de que la función padre haya terminado de ejecutar.
 
 ```javascript
-let prenda='camisa'
-function comprar (){
-    let accesorio='reloj';
-    console.log("Estoy comprando un " + accesorio)
+const miFuncion = () => {
+     let miValor = 2;
+     console.log(miValor);
+     const funcionHija = () => {
+          console.log(miValor += 1);
+     }
+     return funcionHija;
 }
-console.log(prenda)
+const resultado = miFuncion();
+console.log(resultado);
+resultado();
+resultado();
+resultado();
 ```
 
