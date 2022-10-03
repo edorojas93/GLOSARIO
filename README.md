@@ -1,14 +1,21 @@
-# For Each
+# Map
 
-Un bucle FOR especial, utilizado para recorrer los elementos de una estructura de datos. Explicamos su funcionamiento en VBScript. La estructura de control FOR EACH sirve para moverse por los elementos de una estructra de datos, como podría ser un vector, y realizar acciones para cada una de los elementos.
+La Interface Map (java. io. Map) en Java, nos permite representar una estructura de datos para almacenar pares "clave/valor"; de tal manera que para una clave solamente tenemos un valo
 
 
 ```javascript
-const array1 = ['a', 'b', 'c','d','e'];
-array1.forEach(element => console.log(element));
-// Imprime: "a"
-// Imprime: "b"
-// Imprime: "c"
-// Imprime: "d"
-// Imprime: "e
+ arreglo.map(function(elementoActual, indice, arregloOriginal) {  ... código });
+    const products = [
+        { id: "1", name: "shirt", category: "clothing" },
+        { id: "2", name: "Sports Tennis", category: "accessories" },
+        { id: "3", name: "Casual shoes", category: "footwear" },
+        { id: "4", name: "skirt", category: "clothing" },
+        { id: "5", name: "tie", category: "clothing" }
+    ]
+    let nameOfProducts = products.map((product, index, array) => {
+        // Cómo solo queremos los nombres, retornamos "name".
+        return product.name;
+    })
+    console.log(nameOfProducts2);
+```
 
