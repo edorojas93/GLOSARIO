@@ -1,15 +1,10 @@
-# Funciones
+# Separadores
 
-Una función es un bloque de código que realiza alguna operación. Una función puede definir opcionalmente parámetros de entrada que permiten a los llamadores pasar argumentos a la función. Una función también puede devolver un valor como salida
+Los separadores o líneas horizontales, son un elemento de organización y ayudan a que el texto y gráficos aparezcan mejor ordenados. No toda la gente usa esta opción ya que prefieren organizar sus contenidos con tablas por ejemplo, pero siempre es útil saber de su existencia
 
 ```javascript
-function myFunc(theObject) {
-  theObject.make = 'Toyota';
-}
-[parcial]var mycar = { make: 'Honda', model: 'Accord', year: 1998 };
-var x, y;
-x = mycar.make; // x obtiene el valor "Honda"
-myFunc(mycar);
-y = mycar.make; // y obtiene el valor "Toyota"
-                // (la propiedad make fue cambiada por la función)
+const authHeader = 'bearer token'
+const split = authHeader.split(' ') // (1) [ 'bearer', 'token' ]
+const token = split[1] // (2) token
 ```
+
